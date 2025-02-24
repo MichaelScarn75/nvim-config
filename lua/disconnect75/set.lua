@@ -30,3 +30,31 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "90"
+--[[
+base16
+bubblegum
+blackwolf
+dark
+deus
+jellybeans
+lucius
+molokai
+onedark
+papercolor
+powerlineish
+solarized
+tomorrow
+wombat
+--]]
+
+vim.g['airline_theme'] = 'dark'
+vim.g['airline#extensions#tabline#enabled'] = 1
+vim.g['airline#extensions#tabline#left_sep'] = '|'
+vim.g['airline#extensions#tabline#left_alt_sep'] = '>'
+--[[
+--default
+--jsformatter
+--unique_tail
+--unique_tail_improved
+--]]
+vim.g['airline#extensions#tabline#formatter'] = 'unique_tail'
