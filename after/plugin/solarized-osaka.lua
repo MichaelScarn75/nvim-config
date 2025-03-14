@@ -29,8 +29,9 @@ require("solarized-osaka").setup({
   --- function will be called with a Highlights and ColorScheme table
   ---@param highlights Highlights
   ---@param colors ColorScheme
-  --on_highlights = function(highlights, colors) end,
+  ---on_highlights = function(highlights, colors) end,
 
+  --[[
   on_highlights = function(hl, c)
     local prompt = "#2d3149"
     hl.TelescopeNormal = {
@@ -61,4 +62,36 @@ require("solarized-osaka").setup({
       fg = c.bg_dark,
     }
   end,
+
+  on_highlights = function(hl, c)
+    local transparent_color = "none"
+    hl.TelescopeNormal = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+    hl.TelescopeBorder = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+    hl.TelescopePromptNormal = {
+      bg = transparent_color,
+    }
+    hl.TelescopePromptBorder = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+    hl.TelescopePromptTitle = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+    hl.TelescopePreviewTitle = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+    hl.TelescopeResultsTitle = {
+      bg = transparent_color,
+      fg = transparent_color,
+    }
+  end,
+  ]]
 })

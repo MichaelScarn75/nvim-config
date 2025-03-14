@@ -16,11 +16,11 @@ return require('packer').startup(function(use)
 -- Assorted Themes
 -- Uncomment here and also the relevant files in nvim/after/plugin/
   --[[
-  use ({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-  })
-  ]]
+    use ({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
+    ]]
 
   use({
       "craftzdog/solarized-osaka.nvim",
@@ -40,13 +40,13 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-  --use('OmniSharp/omnisharp-vim')
-  --use('OmniSharp/omnisharp-roslyn')
   use('vim-airline/vim-airline')
   use('vim-airline/vim-airline-themes')
   use('sharkdp/fd')
   use('BurntSushi/ripgrep')
   use('preservim/nerdtree')
+  use('mfussenegger/nvim-dap')
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   use ({
 	  'VonHeikemen/lsp-zero.nvim',

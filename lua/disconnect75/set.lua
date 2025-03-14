@@ -2,6 +2,7 @@
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.timeoutlen = 400
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -18,7 +19,7 @@ vim.opt.undodir = "C:\\Users\\chong\\.vim\\undodir"
 vim.g.OmniSharp_server_path = "C:\\Program Files (x86)\\omnisharp-win-x64\\OmniSharp.exe"
 vim.opt.undofile = true
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
@@ -29,23 +30,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "90"
---[[
-base16
-bubblegum
-blackwolf
-dark
-deus
-jellybeans
-lucius
-molokai
-onedark
-papercolor
-powerlineish
-solarized
-tomorrow
-wombat
---]]
+vim.opt.colorcolumn = "100"
 
 vim.g['airline_theme'] = 'dark'
 vim.g['airline#extensions#tabline#enabled'] = 1
@@ -58,3 +43,4 @@ vim.g['airline#extensions#tabline#left_alt_sep'] = '>'
 --unique_tail_improved
 --]]
 vim.g['airline#extensions#tabline#formatter'] = 'unique_tail'
+vim.g['OmniSharp_server_stdio'] = 1
