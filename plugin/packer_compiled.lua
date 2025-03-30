@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-session"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-session",
+    url = "https://github.com/rmagatti/auto-session"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["cyberdream.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cyberdream.nvim",
+    url = "https://github.com/scottmckendry/cyberdream.nvim"
   },
   fd = {
     loaded = true,
@@ -169,6 +179,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["oil.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -188,11 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
-  },
-  ["solarized-osaka.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\solarized-osaka.nvim",
-    url = "https://github.com/craftzdog/solarized-osaka.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
