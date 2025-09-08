@@ -1,4 +1,3 @@
-
 function ColorMyPencils(color)
     color = color or "cyberdream"
     vim.cmd.colorscheme(color)
@@ -15,7 +14,7 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "Function", { fg = "#ffff00"}) -- Yellow
     vim.api.nvim_set_hl(0, "@variable.member", { fg = "#ff1e00"}) -- Orange Red
     vim.api.nvim_set_hl(0, "Type", { fg = "#00f7ff"}) -- Tortoise
-    vim.api.nvim_set_hl(0, "@variable", { fg = "#00ff80", bold = true })
+    vim.api.nvim_set_hl(0, "@variable", { fg = "#00ff80", bold = true }) -- Happy Green
     --vim.api.nvim_set_hl(0, "@property", { fg = "#298FD8", bold = true })
     --vim.api.nvim_set_hl(0, "Typedef", { fg = "#B28500", italic = true })
     --vim.api.nvim_set_hl(0, "Struct", { fg = "#B28500", italic = true })

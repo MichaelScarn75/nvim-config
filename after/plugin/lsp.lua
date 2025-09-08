@@ -10,13 +10,13 @@ require('mason-lspconfig').setup({
         'eslint',
         'omnisharp_mono',
         'html',
-        'harper_ls',
-        'biome',
         'jsonls',
         'lua_ls',
         'lemminx',
+        'ts_ls',
     }
 })
+
 
 
 local cmp = require('cmp')
@@ -30,8 +30,9 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 
 lsp.on_attach(function(client, bufnr)
     local opts = {buffer = bufnr, remap = false}
+    client.server_capabilities.semanticTokensProvider = nil
 
-    vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+    vim.keymap.set("n", "gd", "<cmd>vsplit | lua vim.lsp.buf.definition()<CR>", opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "<leader>lws", function() vim.lsp.buf.workspace_symbol() end, opts)
     vim.keymap.set("n", "<leader>lof", function() vim.lsp.buf.open_float() end, opts)

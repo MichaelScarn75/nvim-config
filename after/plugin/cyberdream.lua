@@ -39,7 +39,7 @@ require("cyberdream").setup({
         -- Example:
         return {
             Comment = { fg = colors.green, bg = "NONE", italic = true },
-            ["@property"] = { fg = colors.magenta, bold = true },
+            ["@property"] = { fg = colors.orangered, bold = true },
         }
     end,
 
@@ -50,6 +50,7 @@ require("cyberdream").setup({
         bg = "#000000",
         green = "#00ff00",
         magenta = "#ff00ff",
+        orangered = "#ff1e00"
     },
 
     -- Disable or enable colorscheme extensions
