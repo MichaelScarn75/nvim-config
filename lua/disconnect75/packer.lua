@@ -58,8 +58,8 @@ return require('packer').startup(function(use)
     use('sharkdp/fd')
     use('BurntSushi/ripgrep')
     use('preservim/nerdtree')
-    use('mfussenegger/nvim-dap')
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use ({'mfussenegger/nvim-dap'})
+    use ({ "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}, {"nvim-neotest/nvim-nio"}  })
 
     use ({
         'VonHeikemen/lsp-zero.nvim',
@@ -91,9 +91,5 @@ return require('packer').startup(function(use)
     use {'stevearc/oil.nvim'}
 
     use { "cseickel/diagnostic-window.nvim", requires = { "MunifTanjim/nui.nvim" } }
-
-    use {'mfussenegger/nvim-dap'}
-
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}, {"nvim-neotest/nvim-nio"}  }
 end)
 
