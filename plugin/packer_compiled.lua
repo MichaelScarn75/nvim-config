@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1741730670\\share\\lua\\5.1\\?.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1741730670\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1741730670\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1741730670\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\chong\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1741730670\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cyberdream.nvim",
     url = "https://github.com/scottmckendry/cyberdream.nvim"
   },
+  ["diagnostic-window.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\diagnostic-window.nvim",
+    url = "https://github.com/cseickel/diagnostic-window.nvim"
+  },
   fd = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fd",
@@ -154,6 +159,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -173,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "C:\\Users\\chong\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-treesitter"] = {
     loaded = true,

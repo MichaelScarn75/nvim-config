@@ -38,7 +38,7 @@ return require('packer').startup(function(use)
         "craftzdog/solarized-osaka.nvim",
         lazy = false,
         priority = 1000,
-        opts = {},
+        opts = function () return { transparent = true, } end,
     })
     ]]
 
@@ -89,4 +89,11 @@ return require('packer').startup(function(use)
     use {'rmagatti/auto-session'}
 
     use {'stevearc/oil.nvim'}
+
+    use { "cseickel/diagnostic-window.nvim", requires = { "MunifTanjim/nui.nvim" } }
+
+    use {'mfussenegger/nvim-dap'}
+
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}, {"nvim-neotest/nvim-nio"}  }
 end)
+
