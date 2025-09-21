@@ -78,7 +78,10 @@ return require('packer').startup(function(use)
             {'hrsh7th/cmp-nvim-lua'},     -- Optional
             {'hrsh7th/cmp-cmdline'},     -- Optional
 
+
             -- Snippets
+            { "hrsh7th/vim-vsnip" },
+            { "hrsh7th/cmp-vsnip" },
             {'L3MON4D3/LuaSnip'},             -- Required
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
